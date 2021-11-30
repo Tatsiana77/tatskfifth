@@ -26,31 +26,32 @@ public class Dock {
     public Dock() {
         dockId = IdGenerator.generateId();
     }
-     public void processShip(Ship ship) {
-         try {
-             TimeUnit.MILLISECONDS.sleep(50);
-         } catch (InterruptedException e) {
-             e.printStackTrace();
-         }
-         Thread.currentThread().interrupt();
-     }
-     Harbor harbor = Harbor.getInstance();
 
-     }
+    public void processShip(Ship ship) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(50);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Thread.currentThread().interrupt();
+    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Dock dock = (Dock) o;
+
+
+
+
+
+@Override
+public boolean equals(Object o){
+        if(this==o)return true;
+        if(o==null||getClass()!=o.getClass())return false;
+        Dock dock=(Dock)o;
         return isBusy.equals(dock.isBusy);
-    }
+        }
 
-    @Override
-    public int hashCode() {
+@Override
+public int hashCode(){
         return isBusy.hashCode();
-    }
-
-
+        }
 }
 

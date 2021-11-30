@@ -44,10 +44,10 @@ public class Ship implements Runnable {
     public void run() {
         logger.log(Level.INFO, "Ship {} started {}", shipId, task.toString().toLowerCase());
         state = State.PROCESSING;
-        Harbor seaPort = Harbor.getInstance();
+        Harbor harbor = Harbor.getInstance();
         Dock dock = Harbor.obtainDock();
         dock.processShip(this);
-        seaPort.releaseDock(dock);
+        harbor.releaseDock(dock);
         state = State.COMPLETE;
         logger.log(Level.INFO, "EXIT: Ship {} ended {}", shipId, task.toString().toLowerCase());
     }

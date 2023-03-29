@@ -30,5 +30,16 @@
 ➢ Use **Log4J2** to write logs.<br/>
 ➢ To display the work of threads, use the main method.<br/>
 
+## Индивидуальные задания
+
+
+Порт.<br/>
+Корабли заходят в порт для разгрузки и/или загрузки контейнеров и швартуются к причалам. У каждого причала может стоять только один корабль. Контейнеры перегружаются<br/> с корабля на склад порта и\или со склада на корабль. Число контейнеров не может превышать емкость склада или корабля. Каждый корабль обязательно должен быть обслужен.<br/>
+
+Individual tasks<br/>
+Port.<br/>
+Ships enter the port to unload and/or load containers and moor to the berths. Each berth can only have one ship. Containers are reloaded from the ship to the port<br/>
+warehouse and / or from the warehouse to the ship. The number of containers cannot exceed the capacity of the warehouse or ship. Each ship must be serviced.<br/>
+
 
 

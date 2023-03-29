@@ -18,13 +18,13 @@
 
 
 ➢ Any entity that wants to access a shared resource must be a thread.<br/>
-➢ The program must use the synchronization capabilities provided by the java.util.concurrent, java.util.concurrent.atomic, and java.util.concurrent.locks libraries.<br/>
+➢ The program must use the synchronization capabilities provided by the java.util.concurrent, java.util.concurrent.atomic, and java.util.concurrent.locks libraries<br/>
 ➢ Do not use synchronized, volatile, as well as BlockingQueue and other restrictedly thread-safe collections.<br/>
 ➢ Classes and other entities of the application must be well-structured into packages and have a name that reflects their functionality.<br/>
 ➢ Use the State template to describe object states, unless there are more than two states.<br/>
-➢ To create flows, it is allowed to use Callable if possible
+➢ To create flows, it is allowed to use Callable if possible.<br/>
 ➢ Run threads using ExecutorService.<br/>
-➢ Instead of Thread.sleep, use only the capabilities of the TimeUnit enum.
+➢ Instead of Thread.sleep, use only the capabilities of the TimeUnit enum.<br/>
 ➢ Read object initialization data from file. The data in the file is correct.<br/>
 ➢ The application must have a thread-safe Singleton. When creating it, it is forbidden to use **enum**.<br/>
 ➢ Use **Log4J2** to write logs.<br/>
